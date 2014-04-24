@@ -1,0 +1,4 @@
+C:\Users\tonicont\documents\visual studio 2010\Projects\CallCenter\CallCenter.CORE\bin\Debug\CallCenter.CORE.dll
+C:\Users\tonicont\documents\visual studio 2010\Projects\CallCenter\CallCenter.CORE\bin\Debug\CallCenter.CORE.pdb
+C:\Users\tonicont\documents\visual studio 2010\Projects\CallCenter\CallCenter.CORE\obj\Debug\CallCenter.CORE.dll
+C:\Users\tonicont\documents\visual studio 2010\Projects\CallCenter\CallCenter.CORE\obj\Debug\CallCenter.CORE.pdb

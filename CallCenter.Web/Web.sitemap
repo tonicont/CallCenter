@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >    
+    <siteMapNode url="~\Default.aspx" title="Página principal"  description="" >
+        <siteMapNode url="~\About.aspx" title="Acerca de"  description="" />
+        <siteMapNode title="Seguridad" roles="Administrador">
+            <siteMapNode url="~/Admin/Security/AccessRules.aspx" title="Reglas de acceso"/>
+            <siteMapNode url="~/Admin/Security/AccessRuleSummary.aspx" title="Resumen de acceso de seguridad"/>
+            <siteMapNode title="Lista de usuarios" roles="Administrador">
+                <siteMapNode url="~/Admin/Security/Users.aspx" title="Usuarios por Nombre"/>
+                <siteMapNode url="~/Admin/Security/UsersByRole.aspx" title="Usuarios por Rol"/>
+                <siteMapNode url="~/Admin/Security/ActiveUsers.aspx" title="Usuarios Activos/Inactivos"/>
+                <siteMapNode url="~/Admin/Security/OnlineUsers.aspx" title="Usuarios Online"/>
+                <siteMapNode url="~/Admin/Security/LockedUsers.aspx" title="Usuarios Bloqueados"/>
+            </siteMapNode>
+            <siteMapNode url="~/Admin/Security/AddUser.aspx" title="Añadir Usuario"/>
+            <siteMapNode url="~/Admin/Security/Rols.aspx" title="Mantenimiento de roles"/>
+        </siteMapNode>
+        <siteMapNode title="Administración" roles="Administrador">
+            <siteMapNode url="~/Admin/TipoEquipoList.aspx" title="Tipos de Equipo"></siteMapNode>
+            <siteMapNode url="~/Admin/IncidenciasList.aspx" title="Lista de Incidencias"></siteMapNode>
+        </siteMapNode>
+        <siteMapNode title="Usuario" roles="Usuario">
+            <siteMapNode url="~/User/EquiposList.aspx" title="Lista Equipos"></siteMapNode>
+            <siteMapNode url="~/User/IncidenciasList.aspx" title="Incidencias"></siteMapNode>
+        </siteMapNode>
+    </siteMapNode>
+</siteMap>

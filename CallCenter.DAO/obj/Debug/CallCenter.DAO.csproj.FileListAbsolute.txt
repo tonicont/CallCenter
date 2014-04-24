@@ -1,0 +1,12 @@
+C:\Users\tonicont\documents\visual studio 2010\Projects\CallCenter\CallCenter.DAO\bin\Debug\CallCenter.DAO.dll.config
+C:\Users\tonicont\documents\visual studio 2010\Projects\CallCenter\CallCenter.DAO\bin\Debug\CallCenter.DAO.dll
+C:\Users\tonicont\documents\visual studio 2010\Projects\CallCenter\CallCenter.DAO\bin\Debug\CallCenter.DAO.pdb
+C:\Users\tonicont\documents\visual studio 2010\Projects\CallCenter\CallCenter.DAO\bin\Debug\CallCenter.CORE.dll
+C:\Users\tonicont\documents\visual studio 2010\Projects\CallCenter\CallCenter.DAO\bin\Debug\EntityFramework.dll
+C:\Users\tonicont\documents\visual studio 2010\Projects\CallCenter\CallCenter.DAO\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\tonicont\documents\visual studio 2010\Projects\CallCenter\CallCenter.DAO\bin\Debug\CallCenter.CORE.pdb
+C:\Users\tonicont\documents\visual studio 2010\Projects\CallCenter\CallCenter.DAO\bin\Debug\EntityFramework.xml
+C:\Users\tonicont\documents\visual studio 2010\Projects\CallCenter\CallCenter.DAO\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\tonicont\documents\visual studio 2010\Projects\CallCenter\CallCenter.DAO\obj\Debug\CallCenter.DAO.csprojResolveAssemblyReference.cache
+C:\Users\tonicont\documents\visual studio 2010\Projects\CallCenter\CallCenter.DAO\obj\Debug\CallCenter.DAO.dll
+C:\Users\tonicont\documents\visual studio 2010\Projects\CallCenter\CallCenter.DAO\obj\Debug\CallCenter.DAO.pdb
