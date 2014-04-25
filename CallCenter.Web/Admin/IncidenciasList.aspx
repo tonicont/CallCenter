@@ -5,7 +5,7 @@
 <h1>Lista de Incidencias</h1>
     <asp:ListView ID="ListView1" runat="server">
         <LayoutTemplate>
-            <table>
+            <table class="itemsTable">
                 <thead>
                     <tr>
                         <th>ID</th>

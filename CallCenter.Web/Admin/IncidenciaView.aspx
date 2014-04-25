@@ -34,11 +34,11 @@
             <td><asp:Label ID="lblProblema" runat="server"></asp:Label></td>
         </tr>
     </table>
-
+    
     <h1>Hilo de Comunicaci&oacute;n</h1>
     <asp:ListView ID="ListView1" runat="server">
         <LayoutTemplate>
-        <table>
+        <table class="messageTable">
             <thead>
                 <tr>
                     <th>Autor</th>
@@ -55,14 +55,14 @@
                 <td><asp:Literal ID="Fecha" runat="server" Text='<%# Eval("Fecha") %>'></asp:Literal></td>
             </tr>
             <tr>
-                <td><strong><asp:Literal ID="Autor" runat="server" Text='<%# Membership.GetUser(Eval("UserId")) %>'></asp:Literal></strong></td>
-                <td><asp:Literal ID="Mensaje" runat="server" Text='<%# Eval("Texto") %>'></asp:Literal></td>
+                <td class="messageAutor"><strong><asp:Literal ID="Autor" runat="server" Text='<%# Membership.GetUser(Eval("UserId")) %>'></asp:Literal></strong></td>
+                <td class="messageText"><asp:Literal ID="Mensaje" runat="server" Text='<%# Eval("Texto") %>'></asp:Literal></td>
             </tr>
         </ItemTemplate>
         </asp:ListView>
 
         <textarea id="txtMensaje" runat="server" cols="50" rows="5"></textarea>
         <br />
-        <asp:Button ID="Enviar" runat="server" Text="Enviar" OnClick="Enviar_Click" />
+        <asp:Button ID="Enviar" runat="server" CssClass="btnGuardar" Text="Enviar" OnClick="Enviar_Click" />
         <asp:Label ID="lblResult" runat="server"></asp:Label>
 </asp:Content>

@@ -6,7 +6,7 @@
     <asp:HyperLink ID="NuevaIncidencia" runat="server" Text="Crear Nueva Incidencia" NavigateUrl="~/User/IncidenciaNew.aspx"></asp:HyperLink>
     <asp:ListView ID="ListView1" runat="server">
         <LayoutTemplate>
-            <table>
+            <table class="itemsTable">
                 <thead>
                     <tr>
                         <th>Id</th>
@@ -29,7 +29,7 @@
                 <td><asp:Literal ID="Descripcion" runat="server" Text='<%# Eval("Descripcion") %>'></asp:Literal></td>
                 <td><asp:Literal ID="Estado" runat="server" Text='<%# Eval("Estado") %>'></asp:Literal></td>
                 <td><asp:HyperLink ID="ver" runat="server" NavigateUrl='<%# Eval("Id","IncidenciaView.aspx?Id={0}") %>' Text="Ver"></asp:HyperLink></td>
-                <td><asp:Button ID="eliminar" runat="server" Text="Eliminar"  OnClientClick="if(!confirm('¿Esta seguro de eliminar la incidencia?')){return false;};" OnCommand="Eliminar_Click" CommandArgument='<%# Eval("Id") %>'/></td>
+                <td><asp:Button ID="eliminar" runat="server" CssClass="btnEliminar" Text="Eliminar"  OnClientClick="if(!confirm('¿Esta seguro de eliminar la incidencia?')){return false;};" OnCommand="Eliminar_Click" CommandArgument='<%# Eval("Id") %>'/></td>
             </tr>
         </ItemTemplate>
     </asp:ListView>

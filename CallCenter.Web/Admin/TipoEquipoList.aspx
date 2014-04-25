@@ -13,13 +13,13 @@
             <td><textarea id="Descripcion_nuevo" cols="20" rows="2" runat="server"></textarea></td>
         </tr>
     </table>
-    <asp:Button ID="Guardar" runat="server" Text="Guardar" OnClick="Guardar_Click" />
+    <asp:Button ID="Guardar" runat="server" CssClass="btnGuardar" Text="Guardar" OnClick="Guardar_Click" />
     <br />
     <asp:Label ID="Result" runat="server" Text=""></asp:Label>
     <h1>Listado de Tipos de Equipo</h1>
     <asp:ListView ID="ListView1" runat="server">
         <LayoutTemplate>
-            <table>
+            <table class="itemsTable">
                 <thead>
                     <tr>
                         <th>ID</th>
@@ -38,7 +38,7 @@
                 <td><asp:Literal ID="Name" runat="server" Text='<%# Eval("Nombre") %>'></asp:Literal></td>
                 <td><asp:Literal ID="Descripcion" runat="server" Text='<%# Eval("Descripcion") %>'></asp:Literal></td>
                 <td><asp:HyperLink ID="edit" runat="server" NavigateUrl='<%# Eval("Id","TipoEquipoEdit.aspx?Id={0}") %>' Text="Editar"></asp:HyperLink></td>
-                <td><asp:Button ID="Eliminar" runat="server" Text="Eliminar" OnClientClick="if(!confirm('¿Esta seguro de eliminar el tipo de equipo?')){return false;};" OnCommand="Eliminar_Click" CommandArgument='<%# Eval("Id") %>'/></td>
+                <td><asp:Button ID="Eliminar" runat="server" CssClass="btnEliminar" Text="Eliminar" OnClientClick="if(!confirm('¿Esta seguro de eliminar el tipo de equipo?')){return false;};" OnCommand="Eliminar_Click" CommandArgument='<%# Eval("Id") %>'/></td>
             </tr>
         </ItemTemplate>
     </asp:ListView>

@@ -30,10 +30,20 @@
         </tr>
     </table>
 
+    <!-- TeamViewer Logo (generated at http://www.teamviewer.com) -->
+<div style="position:relative; width:120px; height:60px;">
+  <a href="http://www.teamviewer.com/link/?url=505374&id=723110875" style="text-decoration:none;" target="_blank">
+    <img src="http://www.teamviewer.com/link/?url=979936&id=723110875" alt="TeamViewer para soporte remoto" title="TeamViewer para soporte remoto" border="0" width="120" height="60" />
+    <span style="position:absolute; top:25.5px; left:50px; display:block; cursor:pointer; color:White; font-family:Arial; font-size:10px; line-height:1.2em; font-weight:bold; text-align:center; width:65px;">
+      Soporte remoto
+    </span>
+  </a>
+</div>
+
     <h1>Hilo de Comunicaci&oacute;n</h1>
     <asp:ListView ID="ListView1" runat="server">
         <LayoutTemplate>
-        <table>
+        <table class="messageTable">
             <thead>
                 <tr>
                     <th>Autor</th>
@@ -50,14 +60,14 @@
                 <td><asp:Literal ID="Fecha" runat="server" Text='<%# Eval("Fecha") %>'></asp:Literal></td>
             </tr>
             <tr>
-                <td><strong><asp:Literal ID="Autor" runat="server" Text='<%# Membership.GetUser(Eval("UserId")) %>'></asp:Literal></strong></td>
-                <td><asp:Literal ID="Mensaje" runat="server" Text='<%# Eval("Texto") %>'></asp:Literal></td>
+                <td class="messageAutor"><strong><asp:Literal ID="Autor" runat="server" Text='<%# Membership.GetUser(Eval("UserId")) %>'></asp:Literal></strong></td>
+                <td class="messageText"><asp:Literal ID="Mensaje" runat="server" Text='<%# Eval("Texto") %>'></asp:Literal></td>
             </tr>
         </ItemTemplate>
         </asp:ListView>
 
         <textarea id="txtMensaje" runat="server" cols="50" rows="5"></textarea>
         <br />
-        <asp:Button ID="Enviar" runat="server" Text="Enviar" OnClick="Enviar_Click" />
+        <asp:Button ID="Enviar" runat="server" CssClass="btnGuardar" Text="Enviar" OnClick="Enviar_Click" />
         <asp:Label ID="lblResult" runat="server"></asp:Label>
 </asp:Content>
